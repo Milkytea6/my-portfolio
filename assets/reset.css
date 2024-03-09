@@ -1,0 +1,6 @@
+/* Resets CSS properties so it's compatible on all browsers */
+*{
+    font-size: 100%;
+    padding:0%;
+    margin:0%;
+}
