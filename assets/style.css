@@ -16,6 +16,7 @@
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
+
 /* Added background gradient color to everything in the header */
 main header {
     background: var(--gradient-color);
@@ -37,6 +38,7 @@ main header nav ul {
     background: var(--gradient-color);
 
 }
+
 /* Navigation links will grow/shrink depending on the view port width. Centered the text in the nav links. */
 main header nav ul li {
     text-align: center;
@@ -46,33 +48,39 @@ main header nav ul li {
     background: var(--gradient-color);
     font-size: 25px;
 }
+
 /* CSS for the About Me section  */
-.about-me{
+.about-me {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
+
 /* applies borders to everything in the About Me section. */
 h2,
 .about-me p,
-img{
+.work p,
+.resume p,
+img {
     border: 10px ridge #F7B2AD;
     box-shadow: 10px 10px 5px #333232;
     margin: 20px;
-    
+
 }
 
-h2{
+h2 {
     text-align: center;
     font-size: 40px;
     padding: 15px;
     background: var(--gradient-color);
 }
+
 /* Made the text stay when border shrinks */
 /* Centered the text */
-.about-me p{
-    width:700px;
+.about-me p
+{
+    width: 700px;
     box-sizing: border-box;
     font-size: 40px;
     overflow: hidden;
@@ -81,15 +89,38 @@ h2{
     text-align: center;
 
 }
+
 /* This will make the image not stretch and look bad. */
 .about-me img {
-    
+
     box-sizing: border-box;
-    width:50%;
+    width: 50%;
     min-width: 430px;
     max-width: 579px;
     max-height: 772px;
 }
-.work img{
-    width:50%;
+/* Start of the work section */
+.work{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.work div{
+    display: inline;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+.work div img{
+    width: 25%;
+}
+.work div p{
+    width: 35%;
+    box-sizing: border-box;
+    font-size: 30px;
+    overflow: hidden;
+    padding: 15px;
+    background: var(--gradient-color);
+    text-align: center;
+    margin: auto;
 }
