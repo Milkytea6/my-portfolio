@@ -70,21 +70,26 @@ h2{
     background: var(--gradient-color);
 }
 /* Made the text stay when border shrinks */
+/* Centered the text */
 .about-me p{
     width:700px;
     box-sizing: border-box;
-    font-size: 35px;
+    font-size: 40px;
     overflow: hidden;
     padding: 15px;
     background: var(--gradient-color);
+    text-align: center;
 
 }
 /* This will make the image not stretch and look bad. */
-img {
+.about-me img {
     
     box-sizing: border-box;
     width:50%;
     min-width: 430px;
     max-width: 579px;
     max-height: 772px;
+}
+.work img{
+    width:50%;
 }
