@@ -1,5 +1,5 @@
 * {
-    color: #333232;
+    color: #CEB7B3;
     background-color: #CEB7B3;
 }
 
@@ -16,18 +16,16 @@
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
-
+/* Added background gradient color to everything in the header */
 main header {
-
-    background-color: #333232;
+    background: var(--gradient-color);
 }
 
 main header>h1 {
     text-align: center;
     font-size: 50px;
     margin: 0px 20px 20px 20px;
-    color: #CEB7B3;
-    background-color: #333232;
+    background: var(--gradient-color);
 }
 
 main header nav ul {
@@ -36,26 +34,57 @@ main header nav ul {
     justify-content: space-between;
     width: 100%;
     font-size: 20px;
-    background-color: #333232;
+    background: var(--gradient-color);
 
 }
-
+/* Navigation links will grow/shrink depending on the view port width. Centered the text in the nav links. */
 main header nav ul li {
+    text-align: center;
     flex: 1 1 200px;
     border: 5px ridge #F7B2AD;
     box-sizing: border-box;
     background: var(--gradient-color);
-    color: #CEB7B3;
+    font-size: 25px;
 }
-
-section{
+/* CSS for the About Me section  */
+.about-me{
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content:space-evenly;
+}
+/* applies borders to everything in the About Me section. */
+h2,
+.about-me p,
+img{
+    border: 10px ridge #F7B2AD;
+    box-shadow: 10px 10px 5px #333232;
+    margin: 20px;
+    
 }
 
+h2{
+    text-align: center;
+    font-size: 40px;
+    padding: 15px;
+    background: var(--gradient-color);
+}
+/* Made the text stay when border shrinks */
+.about-me p{
+    width:700px;
+    box-sizing: border-box;
+    font-size: 35px;
+    overflow: hidden;
+    padding: 15px;
+    background: var(--gradient-color);
+
+}
+/* This will make the image not stretch and look bad. */
 img {
-    flex: 1;
-    border: 10px ridge #F7B2AD;
+    
+    box-sizing: border-box;
+    width:50%;
+    min-width: 430px;
     max-width: 579px;
     max-height: 772px;
 }
