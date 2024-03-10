@@ -67,7 +67,7 @@ main header nav ul li {
 
 
 
-/* This will make the image not stretch and look bad. */
+/* This will make the image not stretch and stay center. */
 .about-me img {
     border: 10px ridge #F7B2AD;
     box-shadow: 10px 10px 5px #333232;
@@ -123,7 +123,7 @@ h3{
 }
 
 
-
+/* Content classes for the Projects section. */
 
 .prework-study-guide,
 .code-refactor,
@@ -148,6 +148,15 @@ h3{
     margin: 30px;
     min-width: 400px;
 }
+/* Added an id to the image to make it larger than the other imagaes. */
+#horiseon-img{
+    width: 80%;
+    border: 10px ridge #F7B2AD;
+    box-shadow: 10px 10px 5px #333232;
+    margin: 30px;
+    min-width: 400px;
+}
+
 
 .projects div p {
     width: 45%;
@@ -167,6 +176,20 @@ h3{
 
 
 footer{
-    background: red;
-    color: blue;
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    padding: 15px;
+    background: var(--gradient-color);
+    border: 10px ridge #F7B2AD;
+    box-shadow: 10px 10px 5px #333232;
+    margin: 50px;
 }
+h4,
+footer ul,
+footer ul li{
+    background-color: transparent;
+}
+
+
+/* Navigation link section. */
