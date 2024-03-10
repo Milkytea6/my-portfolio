@@ -54,19 +54,26 @@ main header nav ul li {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-evenly;
-}
-
-/* applies borders to everything in the About Me section. */
-h2,
-.about-me p,
-.work p,
-.resume p,
-img {
+    justify-content: space-around;
+    background: var(--gradient-color);
     border: 10px ridge #F7B2AD;
     box-shadow: 10px 10px 5px #333232;
-    margin: 20px;
+    width: 80%;
+    margin: auto;
+}
 
+
+
+/* This will make the image not stretch and look bad. */
+.about-me img {
+    border: 10px ridge #F7B2AD;
+    box-shadow: 10px 10px 5px #333232;
+    margin: auto;
+    box-sizing: border-box;
+    width: 50%;
+    min-width: 430px;
+    max-width: 579px;
+    max-height: 772px;
 }
 
 h2 {
@@ -74,53 +81,68 @@ h2 {
     font-size: 40px;
     padding: 15px;
     background: var(--gradient-color);
+    border: 10px ridge #F7B2AD;
+    box-shadow: 10px 10px 5px #333232;
+    margin: 30px;
 }
 
 /* Made the text stay when border shrinks */
 /* Centered the text */
-.about-me p
-{
+.about-me p {
     width: 700px;
     box-sizing: border-box;
     font-size: 40px;
     overflow: hidden;
     padding: 15px;
-    background: var(--gradient-color);
     text-align: center;
+    background-color: transparent;
 
 }
 
 /* This will make the image not stretch and look bad. */
-.about-me img {
 
-    box-sizing: border-box;
-    width: 50%;
-    min-width: 430px;
-    max-width: 579px;
-    max-height: 772px;
-}
 /* Start of the work section */
-.work{
+.work {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+
 }
-.work div{
-    display: inline;
-    box-sizing: border-box;
-    font-size: 25px;
+
+
+
+
+.prework-study-guide,
+.code-refactor,
+.css-snippet-cheatsheet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: var(--gradient-color);
+    border: 10px ridge #F7B2AD;
+    box-shadow: 10px 10px 5px #333232;
+    flex: 1;
+    width: 80%;
+    margin: 40px 0px;
 }
-.work div img{
-    width: 25%;
+
+.work div img {
+    width: 40%;
+    border: 10px ridge #F7B2AD;
+    box-shadow: 10px 10px 5px #333232;
+    margin: 30px;
+    min-width: 400px;
 }
-.work div p{
-    width: 35%;
+
+.work div p {
+    width: 45%;
     box-sizing: border-box;
     font-size: 30px;
-    overflow: hidden;
-    padding: 15px;
-    background: var(--gradient-color);
+    padding: 10px 5px;
+    background-color: transparent;
     text-align: center;
     margin: auto;
 }
