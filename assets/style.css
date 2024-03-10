@@ -60,6 +60,8 @@ main header nav ul li {
     box-shadow: 10px 10px 5px #333232;
     width: 80%;
     margin: auto;
+    padding: 10px;
+    position: relative;
 }
 
 
@@ -83,7 +85,7 @@ h2 {
     background: var(--gradient-color);
     border: 10px ridge #F7B2AD;
     box-shadow: 10px 10px 5px #333232;
-    margin: 30px;
+    margin: 50px;
 }
 
 /* Made the text stay when border shrinks */
@@ -108,7 +110,14 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+}
+h3{
+    background: var(--gradient-color);
+    position: absolute;
+    border: 10px ridge #F7B2AD;
+    top:-50px;
+    font-size: 30px;
+    box-shadow: 10px 10px 5px #333232;
 }
 
 
@@ -121,6 +130,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
     background: var(--gradient-color);
     border: 10px ridge #F7B2AD;
     box-shadow: 10px 10px 5px #333232;
@@ -145,4 +155,8 @@ h2 {
     background-color: transparent;
     text-align: center;
     margin: auto;
+}
+footer{
+    background: red;
+    color: blue;
 }
