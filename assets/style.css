@@ -50,7 +50,8 @@ main header nav ul li {
 }
 
 /* CSS for the About Me section  */
-.about-me {
+.about-me,
+.work-experience {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -90,7 +91,8 @@ h2 {
 
 /* Made the text stay when border shrinks */
 /* Centered the text */
-.about-me p {
+.about-me p,
+.work-experience p {
     width: 700px;
     box-sizing: border-box;
     font-size: 40px;
@@ -103,8 +105,8 @@ h2 {
 
 /* This will make the image not stretch and look bad. */
 
-/* Start of the work section */
-.work {
+/* Start of the projects section */
+.projects {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -139,7 +141,7 @@ h3{
     margin: 40px 0px;
 }
 
-.work div img {
+.projects div img {
     width: 40%;
     border: 10px ridge #F7B2AD;
     box-shadow: 10px 10px 5px #333232;
@@ -147,7 +149,7 @@ h3{
     min-width: 400px;
 }
 
-.work div p {
+.projects div p {
     width: 45%;
     box-sizing: border-box;
     font-size: 30px;
@@ -156,6 +158,14 @@ h3{
     text-align: center;
     margin: auto;
 }
+.work-experience{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
 footer{
     background: red;
     color: blue;
