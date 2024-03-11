@@ -31,3 +31,4 @@ You will find direct links to my projects along with a link to the repository.
 # Link to Deployed Portfolio
 
 # Screenshot of Portfolio
+![Screenshot of Chris' Portfolio Website.](./assets/portfolio-screenshot.png)

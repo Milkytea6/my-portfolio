@@ -1,7 +1,7 @@
-* {
+/* * {
     color: #CEB7B3;
     background-color: #CEB7B3;
-}
+} */
 
 :root {
     --gradient-color: linear-gradient(90deg, #333232, #626262);
@@ -15,6 +15,10 @@
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+    color: #CEB7B3
+}
+main{
+    background-color: #CEB7B3;
 }
 
 /* Added background gradient color to everything in the header */
@@ -47,6 +51,9 @@ main header nav ul li {
     box-sizing: border-box;
     background: var(--gradient-color);
     font-size: 25px;
+}
+main header nav ul li a{
+    color: #CEB7B3;
 }
 
 /* CSS for the About Me section  */
@@ -88,6 +95,14 @@ h2 {
     box-shadow: 10px 10px 5px #333232;
     margin: 50px;
 }
+h3{
+    background: var(--gradient-color);
+    position: absolute;
+    border: 10px ridge #F7B2AD;
+    top:-50px;
+    font-size: 30px;
+    box-shadow: 10px 10px 5px #333232;
+}
 
 /* Made the text stay when border shrinks */
 /* Centered the text */
@@ -102,71 +117,69 @@ h2 {
     background-color: transparent;
 
 }
+/* .code-refactor{
+    display: flex;
+    flex:2;
+    position: relative;
+    background: var(--gradient-color);
+    border: 10px ridge #F7B2AD;
+    box-shadow: 10px 10px 5px #333232;
+    margin: 40px
+} */
 
 /* This will make the image not stretch and look bad. */
 
 /* Start of the projects section */
-.projects {
+
+.projects{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
-}
-h3{
-    background: var(--gradient-color);
-    position: absolute;
-    border: 10px ridge #F7B2AD;
-    top:-50px;
-    font-size: 30px;
-    box-shadow: 10px 10px 5px #333232;
 }
 
-
-/* Content classes for the Projects section. */
-
-.prework-study-guide,
 .code-refactor,
-.css-snippet-cheatsheet {
+.prework-study-guide,
+.css-snippet-cheatsheet{
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     position: relative;
     background: var(--gradient-color);
     border: 10px ridge #F7B2AD;
     box-shadow: 10px 10px 5px #333232;
-    flex: 1;
-    width: 80%;
-    margin: 40px 0px;
+    margin: 50px 20px;
 }
 
-.projects div img {
-    width: 40%;
-    border: 10px ridge #F7B2AD;
+
+
+.prework-study-guide a img,
+.css-snippet-cheatsheet a img
+{
+    width: 25vh;
+    height: auto;
+    border: 5px ridge #F7B2AD;
     box-shadow: 10px 10px 5px #333232;
-    margin: 30px;
-    min-width: 400px;
+    margin: 25px;
+
 }
-/* Added an id to the image to make it larger than the other imagaes. */
-#horiseon-img{
-    width: 80%;
-    border: 10px ridge #F7B2AD;
+.code-refactor a img{
+    width: 50vw;
+    height: auto;
+    border: 5px ridge #F7B2AD;
     box-shadow: 10px 10px 5px #333232;
-    margin: 30px;
-    min-width: 400px;
+    margin: 25px;
+}
+
+.projects div p{
+    width: 250px;
+    font-size: 25px;
+    margin:auto;
+    padding: 15px;
 }
 
 
-.projects div p {
-    width: 45%;
-    box-sizing: border-box;
-    font-size: 30px;
-    padding: 10px 5px;
-    background-color: transparent;
-    text-align: center;
-    margin: auto;
-}
+
 .work-experience{
     display: flex;
     flex-wrap: wrap;
@@ -178,18 +191,18 @@ h3{
 footer{
     display: flex;
     justify-content: space-between;
-    font-size: 40px;
+    font-size: 20px;
     padding: 15px;
     background: var(--gradient-color);
     border: 10px ridge #F7B2AD;
     box-shadow: 10px 10px 5px #333232;
-    margin: 50px;
+    margin: 50px 50px 0px 50px;
 }
 h4,
-footer ul,
-footer ul li{
+footer p{
     background-color: transparent;
 }
 
 
 /* Navigation link section. */
+

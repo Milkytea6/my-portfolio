@@ -23,17 +23,17 @@
             <h1 class="title">My Portfolio</h1>
             <nav>
                 <ul>
-                    <li>About Me</li>
-                    <li>Projects</li>
-                    <li>Work Experience</li>
-                    <li>Contact Me</li>
+                    <li><a href="#about-me"> About Me</a></li>
+                    <li><a href="#projects"> Projects</a></li>
+                    <li><a href="#work-experience"> Work Experience</a></li>
+                    <li><a href="#contact-me"> Contect me</a></li>
                 </ul>
             </nav>
             <!-- <h2> headings denote each section and where the hyperlinks will send the user. -->
-                <!-- <h3> headings denote content within each section separated by <div> with a class. -->
+            <!-- <h3> headings denote content within each section separated by <div> with a class. -->
         </header>
         <div class="section-container">
-            <h2>About Me</h2>
+            <h2 id="about-me">About Me</h2>
             <section class="about-me">
                 <h3>Christopher Giordano</h3>
 
@@ -53,12 +53,16 @@
 
 
             </section>
-            <h2>Projects</h2>
+            <h2 id="projects">Projects</h2>
             <section class="projects">
                 <div class="code-refactor">
                     <h3>Code Refactor</h3>
-                    <img id="horiseon-img" src="./assets/horiseon-code-refactor.png"
-                        alt="Picture of code refactor titled horiseon website with a blue header and navagation links to Search Engine Optimization, Online Reputation Management, and Social Media Marketing. Below the header there is a photo of team members around a deck with papers and laptops going over strategies.">
+                    <a href="https://milkytea6.github.io/code-refactor/">
+                        <img src="./assets/horiseon-code-refactor.png" alt="Picture of code refactor titled horiseon website with a blue header and navagation links to 
+                        Search Engine Optimization, Online Reputation Management, and Social Media Marketing. 
+                        Below the header there is a photo of team members around a deck with papers and laptops 
+                        going over strategies.">
+                    </a>
 
                     <p>I was given started code for this project and I was given the task of refactoring the code.
                         I stared by adding HTML elements where the div tags were.
@@ -67,16 +71,20 @@
                 </div>
                 <div class="prework-study-guide">
                     <h3>Prework Study Guide</h3>
-                    <img src="./assets/prework-study-guide.png"
-                        alt="Picture of my website titled prework study guide with a blue header. Below the header is a box full of HTML notes amd below that  is a box full of CSS note.">
+                    <a href="https://milkytea6.github.io/prework-study-guide/">
+                        <img src="./assets/prework-study-guide.png" alt="Picture of my website titled prework study guide with a blue header. 
+                        Below the header is a box full of HTML notes amd below that  is a box full of CSS note.">
+                    </a>
 
                     <p>I worked on this project as my first website and was given a starting template. I added in extra
                         notes into the boxes for each section and also added in an image of the CSS rule.</p>
                 </div>
                 <div class="css-snippet-cheatsheet">
                     <h3>CSS Snippet Cheatsheet</h3>
-                    <img src="./assets/css-snippet-cheatsheet.png"
-                        alt="Picture of my website titled css snippet cheatsheet with blue header and background. Below the head are boxes of all my snippets of code with descriptions.">
+                    <a href="https://milkytea6.github.io/css-snippet-cheatsheet/">
+                        <img src="./assets/css-snippet-cheatsheet.png" alt="Picture of my website titled css snippet cheatsheet with blue header and background. Below the head 
+                        are boxes of all my snippets of code with descriptions.">
+                    </a>
 
                     <p>I started this website from scratch and added all the code myself. I made a wireframe first then
                         implemented the wireframe to the website throught HTML and CSS.
@@ -85,7 +93,7 @@
                     </p>
                 </div>
             </section>
-            <h2>Work Experience</h2>
+            <h2 id="work-experience">Work Experience</h2>
             <section class="work-experience">
                 <h3>Resume</h3>
                 <!-- emdedded a resume for users to view and download. -->
@@ -99,10 +107,8 @@
 
         </div>
         <footer>
-            <h4>Contact Me</h4>
-            <ul>
-                <li>Email: chrisgcpg@gmail.com</li>
-            </ul>
+            <h4 id="contact-me">Contact Me</h4>
+            <p>Email: chrisgcpg@gmail.com</p>
         </footer>
 
 
