@@ -8,6 +8,11 @@
 
 }
 
+img {
+    display: block;
+    width: 100%;
+}
+
 /* Font class */
 .open-sans-font {
     font-family: "Open Sans", sans-serif;
@@ -17,7 +22,8 @@
     font-variation-settings: "wdth" 100;
     color: #CEB7B3
 }
-main{
+
+main {
     background-color: #CEB7B3;
 }
 
@@ -52,7 +58,8 @@ main header nav ul li {
     background: var(--gradient-color);
     font-size: 25px;
 }
-main header nav ul li a{
+
+main header nav ul li a {
     color: #CEB7B3;
 }
 
@@ -61,7 +68,6 @@ main header nav ul li a{
 .work-experience {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     justify-content: space-around;
     background: var(--gradient-color);
     border: 10px ridge #F7B2AD;
@@ -85,6 +91,11 @@ main header nav ul li a{
     max-width: 579px;
     max-height: 772px;
 }
+/* Adds separation to the floating headings before each section. */
+#about-me,
+#work-experience{
+    margin-bottom: 100px;
+}
 
 h2 {
     text-align: center;
@@ -95,13 +106,14 @@ h2 {
     box-shadow: 10px 10px 5px #333232;
     margin: 50px;
 }
-h3{
+
+h3 {
     background: var(--gradient-color);
     position: absolute;
     border: 10px ridge #F7B2AD;
-    top:-50px;
+    top: -65px;
     font-size: 30px;
-    box-shadow: 10px 10px 5px #333232;
+    box-shadow: 10px 1px 5px #333232;
 }
 
 /* Made the text stay when border shrinks */
@@ -115,8 +127,8 @@ h3{
     padding: 15px;
     text-align: center;
     background-color: transparent;
-
 }
+
 /* .code-refactor{
     display: flex;
     flex:2;
@@ -131,56 +143,49 @@ h3{
 
 /* Start of the projects section */
 
-.projects{
+.projects {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.code-refactor,
-.prework-study-guide,
-.css-snippet-cheatsheet{
+.projects article{
     display: flex;
-    flex-flow: row wrap;
+    flex-basis:25%;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     position: relative;
     background: var(--gradient-color);
     border: 10px ridge #F7B2AD;
     box-shadow: 10px 10px 5px #333232;
-    margin: 50px 20px;
+    margin: 50px 10px;
+    min-width:400px;
+}
+.projects article:first-child{
+    flex-basis: 50%;
+}
+
+.projects article a {
+    display: block;
+    width: 10px;
+    flex-basis: 100%;
 }
 
 
-
-.prework-study-guide a img,
-.css-snippet-cheatsheet a img
-{
-    width: 25vh;
-    height: auto;
-    border: 5px ridge #F7B2AD;
-    box-shadow: 10px 10px 5px #333232;
-    margin: 25px;
-
-}
-.code-refactor a img{
-    width: 50vw;
-    height: auto;
-    border: 5px ridge #F7B2AD;
-    box-shadow: 10px 10px 5px #333232;
-    margin: 25px;
+.projects article a img {
+    flex-basis: 50%;
+    padding: 15px;
 }
 
-.projects div p{
-    width: 250px;
+
+.projects article p {
     font-size: 25px;
-    margin:auto;
     padding: 15px;
 }
 
 
 
-.work-experience{
+.work-experience {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -188,7 +193,7 @@ h3{
 }
 
 
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
@@ -198,11 +203,11 @@ footer{
     box-shadow: 10px 10px 5px #333232;
     margin: 50px 50px 0px 50px;
 }
+
 h4,
-footer p{
+footer p {
     background-color: transparent;
 }
 
 
 /* Navigation link section. */
-

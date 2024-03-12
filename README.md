@@ -30,5 +30,11 @@ You will find direct links to my projects along with a link to the repository.
 ```
 # Link to Deployed Portfolio
 
+https://milkytea6.github.io/my-portfolio/
+
+# Link to GitHub Repository
+
+https://github.com/Milkytea6/my-portfolio
+
 # Screenshot of Portfolio
 ![Screenshot of Chris' Portfolio Website.](./assets/portfolio-screenshot.png)
