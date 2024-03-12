@@ -1,5 +1,5 @@
 ### My Portfolio
-
+Click the nav links in the navigation  bar to be directed to each section.
 ## User Story
 ``` 
 AS AN employer
