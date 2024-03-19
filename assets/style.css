@@ -42,6 +42,8 @@ main header nav ul {
     width: 100%;
     font-size: 20px;
     background: var(--gradient-color);
+    position: sticky;
+    top:0;
 
 }
 
@@ -147,6 +149,7 @@ h3 {
     margin: 50px 10px;
     min-width:450px;
 }
+/* Changed flex basis so first project is bigger. */
 .projects article:first-child{
     flex-basis: 85%;
 }
